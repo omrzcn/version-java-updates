@@ -1,6 +1,7 @@
 package com.cydeo;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,23 @@ public class Main {
         items.add(4);
         //items.add("Apple");
         printDoubled(items);
+
+        System.out.println("=================================================");
+
+        FootballPlayer joe = new FootballPlayer("Joe");
+        BaseballPlayer pat = new BaseballPlayer("Pat");
+        SoccerPlayer beckham = new SoccerPlayer("Beckham");
+
+
+
+        Team<SoccerPlayer> liverpool = new Team("Liverpool");
+        liverpool.addPlayer(beckham);
+        //liverpool.addPlayer(joe);
+        //liverpool.addPlayer(pat);
+
+
+
+
 
 
 
