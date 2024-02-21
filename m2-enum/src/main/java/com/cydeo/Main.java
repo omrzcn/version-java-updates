@@ -51,6 +51,9 @@ public class Main {
         System.out.println(Currency.PENNY.getValue()); // with enum name.object.getvalue
 
 
+        System.out.println(Currency.QUARTER.ordinal()); // ordinal shows us constant (sabit) index number.
+
+
     }
 
     private static void calculate (double x ,double y, Operation operation){
