@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Team<T extends Player >  { // T means is Type .Any class you can pass to Team. Should accept only Player class and subclasses
-    // this  <T extends Player > is important
+    // this  <T extends Player > is important. we are gonna use it a lot .
     private String name ;
 
     private List<T>members = new ArrayList();
