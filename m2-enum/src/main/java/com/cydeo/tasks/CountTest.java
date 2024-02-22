@@ -32,5 +32,9 @@ public class CountTest {
         return count;
     }
 
+    // why i need generic here ?
+
+      //
+
 
 }
