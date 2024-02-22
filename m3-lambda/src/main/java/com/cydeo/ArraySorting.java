@@ -4,15 +4,24 @@ public class ArraySorting { // QuickSort , BubbleSort
     public static void main(String[] args) {
 
 
-        ArraySorting as = new ArraySorting();
-        as.sort();
+        ArraySorting arraySort = new ArraySorting();
+
+        QuickSort quickSort = new QuickSort();
+
+        BubbleSort bubbleSort = new BubbleSort();
+
+
+
+        arraySort.sort(quickSort);  // behavior parameterization
+        arraySort.sort(bubbleSort); // behavior parameterization
+
 
 
 
 
     }
-    private void sort(){
-        System.out.println("Quick sorting array");
+    private void sort(Sorting sorting){
+        sorting.sort();
     }
 
 
