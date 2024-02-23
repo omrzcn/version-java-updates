@@ -14,11 +14,29 @@ public class AppleTest {
         inventory.add(new Apple(50,Color.RED));
 
 
+
+
+        // the code below we do before lambda , java 8
         List<Apple> heavyApples = filterApples(inventory,new AppleHeavyPredicate());
 
         List<Apple> greenApples = filterApples(inventory,new AppleGreenColorPredicate());
         System.out.println(heavyApples);
         System.out.println(greenApples);
+
+
+        // code below after lambda (new easy way )
+
+        ApplePredicate weightApple = (apple) -> apple.getWeight() > 200;
+        filterApples(inventory,weightApple);
+
+        ApplePredicate greenApple = apple -> apple.getColor().equals(Color.GREEN);
+        filterApples(inventory,greenApple);
+
+
+
+
+
+
 
 
 
