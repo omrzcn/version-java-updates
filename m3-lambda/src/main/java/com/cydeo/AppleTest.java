@@ -26,11 +26,12 @@ public class AppleTest {
 
         // code below after lambda (new easy way )
 
-        ApplePredicate weightApple = (apple) -> apple.getWeight() > 200;
+        ApplePredicate weightApple = apple -> apple.getWeight()>200;
         filterApples(inventory,weightApple);
 
         ApplePredicate greenApple = apple -> apple.getColor().equals(Color.GREEN);
         filterApples(inventory,greenApple);
+        filterApples(inventory,apple -> apple.getWeight()>200); // this lambda shortest way. Shorter than 1 line above.
 
 
 
