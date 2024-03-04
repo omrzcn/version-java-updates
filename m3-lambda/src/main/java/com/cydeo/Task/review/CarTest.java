@@ -9,6 +9,13 @@ public class CarTest {
     public static void main(String[] args) {
 
 
+        Car2 car2FromBuilder = Car2.builder().make("Honda").topSpeed(120).year(2017).build();
+        System.out.println(car2FromBuilder.toString());
+
+        System.out.println("==========================================");
+
+
+
 
         List<Car> carList = new ArrayList<>();
 
