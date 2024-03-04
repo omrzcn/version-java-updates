@@ -12,6 +12,9 @@ public class CarTest {
         Car2 car2FromBuilder = Car2.builder().make("Honda").topSpeed(120).year(2017).build();
         System.out.println(car2FromBuilder.toString());
 
+        Car2 carFromBuilder1 = Car2.builder().make("Toyota").build();
+        System.out.println(carFromBuilder1);
+
         System.out.println("==========================================");
 
 
