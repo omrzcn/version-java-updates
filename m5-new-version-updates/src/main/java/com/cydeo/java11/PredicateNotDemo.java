@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.function.Predicate.*;
 
 public class PredicateNotDemo {
     public static void main(String[] args) {
